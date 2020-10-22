@@ -18,6 +18,9 @@ body,
 h1 {
   text-align: center;
 }
+button{
+  width: 100px;
+}
 .popup .content {
   display: flex;
   flex-direction: column;

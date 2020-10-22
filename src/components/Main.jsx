@@ -26,7 +26,7 @@ export default function Main() {
   // función que envia la palabra clave a la api
   const sendInfo = () => {
     setReady(false);
-    axios
+      axios
       .get(`https://www.omdbapi.com/?apikey=db2310a&s=${valor}`)
       .then((data) => {
         if (data.data.Error) {
@@ -39,7 +39,7 @@ export default function Main() {
         }
       })
       .catch((err) => console.log(err));
-  };
+    }
 
   //función que se ejecuta cuando se le hace click a la imágen, recibe por parámetro el id de "imdbID"
   const openPopup = (id) => {
