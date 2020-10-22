@@ -1,14 +1,14 @@
 import React from "react";
 import { FormControl, InputLabel, Select, Grid } from "@material-ui/core";
 
-function Header({ searchGenre }) {
+function Header() {
   return (
     <Grid>
       <FormControl>
         <InputLabel style={{ color: "white" }} htmlFor="age-native-simple">
           Genre
         </InputLabel>
-        <Select native style={{ background: "white" }} onChange={searchGenre}>
+        <Select native style={{ background: "white" }}>
           <option value="Action">Action</option>
           <option value="Horror">Horror</option>
           <option value="Adventure">Adventure</option>
