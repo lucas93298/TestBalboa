@@ -28,4 +28,12 @@ h1 {
   padding: 25px;
   color: #fff;
 }
-
+.container{
+  display: flex; 
+  justify-content: center;
+}
+@media only screen and (max-width: 780px) {
+  .container{
+    justify-content: start;
+  }
+}

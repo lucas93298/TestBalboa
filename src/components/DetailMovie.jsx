@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
 function Popup({ selected, closePopup }) {
   const classes = useStyles();
   return (
-    <Grid container justify="center">
+    <Grid className="container">
       <Grid item xs={6} container>
         <section className="popup">
           <div className="content">
