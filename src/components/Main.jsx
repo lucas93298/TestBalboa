@@ -21,7 +21,7 @@ export default function Main() {
   const sendInfo = () => {
     setReady(false);
     axios
-      .get(`http://www.omdbapi.com/?apikey=db2310a&s=${valor}`)
+      .get(`https://www.omdbapi.com/?apikey=db2310a&s=${valor}`)
       .then((data) => {
         debugger;
         if (data.data.Error) {
@@ -37,7 +37,7 @@ export default function Main() {
   };
 
   const openPopup = (id) => {
-    axios(`http://www.omdbapi.com/?apikey=db2310a&i=${id}`)
+    axios(`https://www.omdbapi.com/?apikey=db2310a&i=${id}`)
       .then(({ data }) => {
         console.log(data);
         setSelected(data);
